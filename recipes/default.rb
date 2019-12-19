@@ -4,6 +4,14 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
+directory '/var/www/html' do
+    owner 'root'
+    group 'root'
+    mode '0755'
+    action :create
+end
+
+
 file '/var/www/html/index.html' do
     content "Welcome to My project\n"
     owner 'root'

@@ -14,6 +14,8 @@ verifier:
 
 platforms:
   - name: ubuntu/trusty64
+  - name: bento/centos-7.5
+  - name: ubuntu/trusty64
 
 suites:
   - name: default
