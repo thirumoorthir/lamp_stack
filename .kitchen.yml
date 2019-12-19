@@ -13,7 +13,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: bento/ubuntu-16.04
+  - name: ubuntu/trusty64
 
 suites:
   - name: default

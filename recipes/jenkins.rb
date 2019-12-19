@@ -20,11 +20,8 @@ execute 'add jenkins repo ' do
     action :run
 end
 
-apt_update
 
-package 'openjdk-8-jdk' do
-    action :install
-end
+include_recipe 'java'
 
 package 'jenkins' do
     action :install
